@@ -1,6 +1,5 @@
-﻿  CppMiniGame.cpp
-C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\CppMiniGame\CppMiniGame.cpp(8,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Game.cpp
-C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\CppMiniGame\Game.cpp(73,31): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+﻿  Game.cpp
+C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\CppMiniGame\Game.cpp(74,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\CppMiniGame\Game.cpp(86,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\CppMiniGame\Game.cpp(96,20): warning C4018: '<': signed/unsigned mismatch
   CppMiniGame.vcxproj -> C:\Users\ASUS\CPP_PL\CppMiniGame\CppMiniGame\Debug\CppMiniGame.exe

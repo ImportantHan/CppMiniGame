@@ -38,6 +38,7 @@ Game::Game()
 
 	// Enemy
 	this->InitRectEnemy();
+	this->SetSpawnValue();
 }
 
 Game::~Game()
@@ -74,6 +75,7 @@ void Game::Update()
 		// 적이 생성되는 시간 간격
 		if (this->EnemySpawnTime >= this->EnemySpawnTimeMax) {
 			this->SpawnEnemy();
+			this->EnemySpawnTime = 0.0f;
 		}
 		else {
 			this->EnemySpawnTime += 1.0f;
@@ -81,7 +83,7 @@ void Game::Update()
 	}
 	
 	// 여러개 적을 생성되는 즉시 움직임
-	for (int i = 0; i < this->EnemyMaxNumber; i++) {
+	for (int i = 0; i < this->RectEnemies.size(); i++) {
 		this->RectEnemies[i].move(0.0f, 3.0f);
 	}
 }
@@ -91,7 +93,7 @@ void Game::Render()
 	// 이전 프레임에 그려진 내용을 지움
 	this->Window->clear();
 	// draw object
-	for (int i = 0; i < this->EnemyMaxNumber; i++) {
+	for (int i = 0; i < this->RectEnemies.size(); i++) {
 		this->Window->draw(this->RectEnemies[i]);
 	}
 	// display

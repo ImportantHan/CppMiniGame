@@ -41,6 +41,14 @@ private:
 	// Set Spawn Vlaue
 	void SetSpawnValue();
 
+	/*
+		Player
+	*/
+	CircleShape Player;
+	// Init Player
+	void InitPlayer();
+
+
 public:
 	// Constructor
 	Game();
@@ -52,7 +60,18 @@ public:
 	*/
 	// Spawn Enemy
 	void SpawnEnemy();
+	void UpdateEnemy();
 
+	/*
+		Player
+	*/
+	void UpdatePlayer();
+
+	/*
+		Collision
+	*/
+	void UpdateCollision();
+	void GameOver();
 
 	/*
 		Game Loop
